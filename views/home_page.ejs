@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css'>
+</head>
+<body
+    style="background-image: url('https://images.pexels.com/photos/772803/pexels-photo-772803.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');background-size: cover;">
+    <center>
+    <h1>Welcome Back, <%=userData.first_name.charAt(0).toUpperCase() + userData.first_name.slice(1) %>
+    </h1>
+    <button style="margin-top: 37%;font-size: 15px;" onclick="window.location.href='/create'">Create A
+            Blog</button>
+        <button style="margin-top: 37%;font-size: 15px;" onclick="window.location.href='/showAll'">See All
+            Blogs</button>
+        <button style="margin-top: 37%;font-size: 15px;" onclick="window.location.href='/edit'">Edit a Blog</button>
+        <button style="margin-top: 37%;font-size: 15px;" onclick="window.location.href='/delete'">Delete A blog post</button>
+    
+    </center>
+</body>
+
+</html>

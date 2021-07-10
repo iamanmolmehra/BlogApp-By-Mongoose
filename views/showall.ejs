@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Show All</title>
+</head>
+<style>
+  div {
+    width:80%;
+    padding: 10px;
+    border: 4px solid rgb(59, 240, 240);
+    margin-left: 10%;
+  }
+</style>
+
+<body style="background-image: url('https://images.pexels.com/photos/3408744/pexels-photo-3408744.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');">
+  <center>
+    <h1 style="font-family:'Times New Roman', Times, serif;">Blog Posts</h1>
+    <br>
+  </center>
+  <div style="background-color:rgb(105, 199, 228); ">
+    <% for (let x in userData) { %><br>
+      <h3>Title: <%= userData[x].title %>
+      </h3>
+      <h3>
+        Description: <%= userData[x].description %>
+          <br><br>
+          <hr>
+      </h3>
+      <% }; %>
+  </div>
+  <button style="font-size: 18px;font-family:'Times New Roman', Times, serif;margin-left: 47%;margin-top: 8%;" onclick="window.location.href='/create'">Create A Blog</button><br><br>
+</body>
+
+</html>

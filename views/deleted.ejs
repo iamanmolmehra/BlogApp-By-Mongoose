@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit a Post Page</title>
+    <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css'>
+</head>
+
+<body style="background-image: url('https://cdn.pixabay.com/photo/2014/11/13/23/34/palace-530055_960_720.jpg');">
+    <form action="/delete" method="POST">
+        <center style="font-size: 20px;">
+            <h1>Edit A Post</h1><br>
+            Blog Title: <input type="text" style="font-size: 15px; height: 30px; width:380px;" name="title"><br><br>
+            <br><br>
+            <input type="submit" value="submit" style="font-size: 20px;font-family:'Times New Roman', Times, serif;"">
+        </center>
+    </form>
+    <center>
+        <button style="margin-top: 25%;font-size: 18px;font-family:'Times New Roman', Times, serif;"  onclick="window.location.href='/showAll'">See All Blogs</button>
+        <button style="margin-top: 25%;font-size: 18px;font-family: 'Times New Roman', Times, serif;" onclick="window.location.href='/edit'">Edit a Blog</button>
+    </center>
+</body>
+</html>
